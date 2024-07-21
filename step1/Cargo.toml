@@ -1,0 +1,29 @@
+[package]
+name = "step1"
+version = "0.1.0"
+edition = "2021"
+
+# lib
+[dependencies]
+rand = "0.8.5"
+
+# Outside bin Runfiles
+[[bin]]
+name = "generater"
+path = "src/bin/generater.rs"
+
+[[bin]]
+name = "ordering"
+path = "src/bin/ordering.rs"
+
+[[bin]]
+name = "loop_ordering"
+path = "src/bin/loop_ordering.rs"
+
+[[bin]]
+name = "let"
+path = "src/bin/let.rs"
+
+[[bin]]
+name = "constant"
+path = "src/bin/constant.rs"
