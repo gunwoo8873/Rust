@@ -1,6 +1,6 @@
 [package]
 name = "step1"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 
 # lib
@@ -17,13 +17,29 @@ name = "ordering"
 path = "src/bin/ordering.rs"
 
 [[bin]]
-name = "loop_ordering"
-path = "src/bin/loop_ordering.rs"
+name = "variable"
+path = "src/bin/variable.rs"
 
 [[bin]]
-name = "let"
-path = "src/bin/let.rs"
+name = "data-type"
+path = "src/bin/data-type.rs"
 
 [[bin]]
-name = "constant"
-path = "src/bin/constant.rs"
+name = "array-ex"
+path = "src/bin/array-ex.rs"
+
+[[bin]]
+name = "function"
+path = "src/bin/function.rs"
+
+[[bin]]
+name = "regular"
+path = "src/bin/regular.rs"
+
+[[bin]]
+name = "boolean"
+path = "src/bin/boolean.rs"
+
+[[bin]]
+name = "loop"
+path = "src/bin/loop.rs"
