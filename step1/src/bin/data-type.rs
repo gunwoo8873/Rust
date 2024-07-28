@@ -5,9 +5,10 @@ fn data_type() {
 }
 
 fn float_type() {
-    let x : f32 = 2.0; // 2배수 정밀도
-    let y : f64 = 3.0; // 1배수 정밀도
-    println!("{} {}", x, y); // 2.0 3.0
+    let x : f32 = 2.0; // 1배수 정밀도
+    let y : f64 = 3.0; // 2배수 정밀도
+    println!("Float Output 1 : {} {}", x, y);
+    println!("Float Output 2 : {x} {y}");
 }
 
 fn operator_type() {
@@ -31,13 +32,13 @@ fn operator_type() {
     println!("truncated : {:.2}", truncated);
 
     // let remainder = a % b;
-    let remainder = a.rem_euclid(b); // rem_euclid = %
+    let remainder = a.rem_euclid(b); /* rem_euclid = % */
     println!("remainder : {:.2}", remainder);
 }
 
 fn boolean_type() {
     let t = true;
-    let f : bool = false;
+    let f = false;
 
     if t == f {
         println!("{f}");
@@ -54,8 +55,11 @@ fn string_type() {
 }
 
 fn compound_type() {
-    let arr : (i32, f64, u8) = (500, 6.4, 1); // Type = Array
-    let (x, y, z) = arr; // destructuring
+    // Type = Array
+    let arr : (i32, f64, u8) = (500, 6.4, 1);
+
+    // destructuring
+    let (x, y, z) = arr;
     println!("tup : {x} {y} {z}");
 
     let x = arr.0;
@@ -68,7 +72,8 @@ fn compound_type() {
 }
 
 fn array_type() {
-    let arr : [i32; 10] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // [Bit; Length] = [Index]
+    // [Bit; Length] = [Index]
+    let arr : [i32; 10] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     let a = arr[0];
     let b = arr[5];
     println!("a : {a}, b : {b}");
