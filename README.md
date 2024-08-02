@@ -21,6 +21,6 @@
 * Function
 
 ### Step 2
-* Onwership
+* Ownership
     * String type
     * Stack push
