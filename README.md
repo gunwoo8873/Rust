@@ -22,5 +22,8 @@
 
 ### Step 2
 * Ownership
-    * String type
+    * Stack Move
     * Stack push
+    * String type
+    * take and give
+    * Reference & mut Reference

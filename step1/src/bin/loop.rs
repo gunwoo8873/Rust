@@ -33,11 +33,3 @@ fn for_fn() {
         println!("Number {number}");
     };
 }
-
-fn while_fn() {
-    let mut current_number = 10;
-
-    while {
-        println!("")
-    };
-}
