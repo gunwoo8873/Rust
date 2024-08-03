@@ -1,18 +1,37 @@
 fn main() {
-    literal_push();
-    memory_move();
+    move_stack();
+    copy_stack();
+    push_stack();
+
+    let take_str = String :: from("Take variable str");
+    take_stack(take_str);
+
+    let give_str = String :: from("Give variable str");
+    give_stack(give_str);
 }
 
-fn literal_push() {
-    let mut stack = String :: from("Value");
-    stack.push_str(", Add Value"); // push_str = add String Literal
-
-    println!("{}", stack);
+fn move_stack() {
+    let str = String :: from("Move Memory variable str");
+    let move_str = str;
+    println!("Move Result : {}", move_str);
 }
 
-fn memory_move() {
-    let owner_1 = String :: from("Rust");
-    let owner_2 = owner_1.clone(); // The owner 1 stack copy
+fn copy_stack() {
+    let str = String :: from("Clone Memory variable str");
+    let copy_str = str.clone();
+    println!("Copy Result : {}", copy_str);
+}
 
-    println!("owner_1 = {}, owner_2 = {}", owner_1, owner_2);
+fn push_stack() {
+    let mut str = String :: from("Push Memory");
+    str.push_str("vaiable str");
+    println!("Push Result : {}", str);
+}
+
+fn take_stack(take_str : String) {
+    println!("{}", take_str);
+}
+
+fn give_stack(give_str : String) -> String {
+    give_str
 }
